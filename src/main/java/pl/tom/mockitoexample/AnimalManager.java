@@ -2,12 +2,13 @@ package pl.tom.mockitoexample;
 
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
+import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Service
+@Controller
 public class AnimalManager {
 
     private AnimalRepo animalRepo;
